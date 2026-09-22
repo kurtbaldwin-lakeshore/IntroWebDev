@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>External Stylesheet — LP7 — Selectors, Box Model &amp; External CSS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="crumb"><a href="../index.html">All Learning Plans</a>
+<span class="sep">/</span>
+<a href="index.html">LP7 — Selectors, Box Model &amp; External CSS</a>
+<span class="sep">/</span>
+<span class="current">External Stylesheet</span></div>
+</header>
+<main>
+<div class="topic-hero">
+  <h1>External Stylesheet</h1>
+  <p>A link tag in the head connects an HTML page to an external CSS file. One stylesheet can style every page that links to it.</p>
+</div>
+
+<h2 class="block-title">Live Demo</h2>
+<div class="demo-box">
+<p style="margin:0;color:#5B5F78;">This is the moment every inline style attribute gets deleted and replaced by rules living in one shared file.</p>
+</div>
+
+<h2 class="block-title">Code</h2>
+<div class="code-blocks two-col">
+    <div class="code-panel">
+      <div class="code-panel-header">HTML</div>
+      <pre><code>&lt;<span class="tag">head</span>&gt;
+  &lt;<span class="tag">link</span> rel=<span class="str">"stylesheet"</span> href=<span class="str">"css/style.css"</span>&gt;
+&lt;/<span class="tag">head</span>&gt;</code></pre>
+    </div>
+    <div class="code-panel">
+      <div class="code-panel-header">style.css</div>
+      <pre><code><span class="cmt">/* All the rules that used to be
+   inline style="" attributes now
+   live here instead */</span>
+p { <span class="prop">color</span>: #5B5F78; }</code></pre>
+    </div>
+</div>
+
+
+<nav class="topic-footnav">
+  <a href="flexbox-basics.html">← Previous</a>
+  <a class="to-index" href="index.html">LP7 — Selectors, Box Model &amp; External CSS topics</a>
+  <span></span>
+</nav>
+
+</main>
+</body>
+</html>

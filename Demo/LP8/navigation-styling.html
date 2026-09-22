@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navigation Styling — LP8 — Typography, Navigation &amp; Accessibility</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="crumb"><a href="../index.html">All Learning Plans</a>
+<span class="sep">/</span>
+<a href="index.html">LP8 — Typography, Navigation &amp; Accessibility</a>
+<span class="sep">/</span>
+<span class="current">Navigation Styling</span></div>
+</header>
+<main>
+<div class="topic-hero">
+  <h1>Navigation Styling</h1>
+  <p>A real navigation bar combines Flexbox layout with pseudo-class states and aria-current to mark the active page.</p>
+</div>
+
+<h2 class="block-title">Live Demo</h2>
+<div class="demo-box">
+<nav style="display:flex;gap:4px;background:#1B1F3B;padding:8px;border-radius:8px;"><a href="#" style="color:#fff;padding:8px 14px;border-radius:6px;background:#3A7CA5;text-decoration:none;font-size:0.9rem;">Home</a><a href="#" style="color:#C6CAE6;padding:8px 14px;border-radius:6px;text-decoration:none;font-size:0.9rem;">About</a><a href="#" style="color:#C6CAE6;padding:8px 14px;border-radius:6px;text-decoration:none;font-size:0.9rem;">Contact</a></nav>
+</div>
+
+<h2 class="block-title">Code</h2>
+<div class="code-blocks two-col">
+    <div class="code-panel">
+      <div class="code-panel-header">HTML</div>
+      <pre><code>&lt;<span class="tag">nav</span>&gt;
+  &lt;<span class="tag">a</span> href=<span class="str">"index.html"</span> aria-current=<span class="str">"page"</span>&gt;Home&lt;/<span class="tag">a</span>&gt;
+  &lt;<span class="tag">a</span> href=<span class="str">"about.html"</span>&gt;About&lt;/<span class="tag">a</span>&gt;
+  &lt;<span class="tag">a</span> href=<span class="str">"contact.html"</span>&gt;Contact&lt;/<span class="tag">a</span>&gt;
+&lt;/<span class="tag">nav</span>&gt;</code></pre>
+    </div>
+    <div class="code-panel">
+      <div class="code-panel-header">style.css</div>
+      <pre><code>nav { <span class="prop">display</span>: flex; <span class="prop">gap</span>: 4px; }
+nav a { <span class="prop">padding</span>: 8px 14px; <span class="prop">border-radius</span>: 6px; }
+nav a[aria-current="page"] { <span class="prop">background</span>: var(--color-primary); <span class="prop">color</span>: #fff; }</code></pre>
+    </div>
+</div>
+
+
+<nav class="topic-footnav">
+  <a href="typographic-scale.html">← Previous</a>
+  <a class="to-index" href="index.html">LP8 — Typography, Navigation &amp; Accessibility topics</a>
+  <a href="background-image.html">Next →</a>
+</nav>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Syntax Basics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="crumb"><a href="../index.html">All Learning Plans</a>
+<span class="sep">/</span>
+<span class="current">HTML Syntax Basics</span></div>
+</header>
+<main>
+<h1 class="hub-title">HTML Syntax Basics</h1>
+<p class="hub-sub">Every tag and pattern covered from LP1 through LP5 — the complete HTML toolkit before CSS is introduced.</p>
+<div class="syntax-group">
+  <h2>Document Structure</h2>
+  <p class="syntax-group-note">Every page starts with this shell.</p>
+  <div class="syntax-row"><code class="syn-name">&lt;!DOCTYPE html&gt;</code><p class="syn-desc">Must be the very first line of every HTML file.</p></div>
+<div class="syntax-row"><code class="syn-name">&lt;html lang="en"&gt;</code><p class="syn-desc">Wraps the whole page; lang tells assistive tech what language to read in.</p></div>
+<div class="syntax-row"><code class="syn-name">&lt;head&gt;</code><p class="syn-desc">Holds meta info — not visible on the page itself.</p></div>
+<div class="syntax-row"><code class="syn-name">&lt;meta charset="UTF-8"&gt;</code><p class="syn-desc">Sets the character encoding.</p></div>
+<div class="syntax-row"><code class="syn-name">&lt;meta name="viewport" ...&gt;</code><p class="syn-desc">Tells mobile browsers to use the real device width.</p></div>
+<div class="syntax-row"><code class="syn-name">&lt;title&gt;</code><p class="syn-desc">The text shown in the browser tab.</p></div>
+<div class="syntax-row"><code class="syn-name">&lt;body&gt;</code><p class="syn-desc">Everything visible on the page goes here.</p></div>
+</div>
+<div class="syntax-group">
+  <h2>Text & Headings</h2>
+  
+  <div class="syntax-row"><code class="syn-name">&lt;h1&gt; – &lt;h3&gt;</code><p class="syn-desc">Heading levels. Exactly one h1 per page; h2/h3 nest underneath in order.</p></div>
+<div class="syntax-row"><code class="syn-name">&lt;p&gt;</code><p class="syn-desc">A paragraph of body text.</p></div>
+<div class="syntax-row"><code class="syn-name">&lt;strong&gt;</code><p class="syn-desc">Semantic emphasis (renders bold).</p></div>
+<div class="syntax-row"><code class="syn-name">&lt;em&gt;</code><p class="syn-desc">Semantic emphasis (renders italic).</p></div>
+<div class="syntax-row"><code class="syn-name">&lt;!-- comment --&gt;</code><p class="syn-desc">A note in the code that never renders on the page.</p></div>
+</div>
+<div class="syntax-group">
+  <h2>Lists</h2>
+  
+  <div class="syntax-row"><code class="syn-name">&lt;ol&gt; / &lt;li&gt;</code><p class="syn-desc">Ordered (numbered) list, when sequence matters.</p></div>
+<div class="syntax-row"><code class="syn-name">&lt;ul&gt; / &lt;li&gt;</code><p class="syn-desc">Unordered (bulleted) list, when order doesn’t matter.</p></div>
+</div>
+<div class="syntax-group">
+  <h2>Images & Tables</h2>
+  
+  <div class="syntax-row"><code class="syn-name">&lt;img src="" alt=""&gt;</code><p class="syn-desc">Every image needs alt — descriptive text, or alt="" if purely decorative.</p></div>
+<div class="syntax-row"><code class="syn-name">&lt;table&gt; / &lt;caption&gt;</code><p class="syn-desc">A data table, named by its caption.</p></div>
+<div class="syntax-row"><code class="syn-name">&lt;thead&gt; / &lt;th&gt;</code><p class="syn-desc">The header row — th cells are announced differently than td by screen readers.</p></div>
+<div class="syntax-row"><code class="syn-name">&lt;tbody&gt; / &lt;tr&gt; / &lt;td&gt;</code><p class="syn-desc">The table body: rows and data cells.</p></div>
+</div>
+<div class="syntax-group">
+  <h2>Links</h2>
+  
+  <div class="syntax-row"><code class="syn-name">&lt;a href=""&gt;</code><p class="syn-desc">A link. href is where it points.</p></div>
+<div class="syntax-row"><code class="syn-name">target="_blank" rel="noopener noreferrer"</code><p class="syn-desc">Opens in a new tab, safely. Always use them together.</p></div>
+<div class="syntax-row"><code class="syn-name">&lt;a href="#section-id"&gt;</code><p class="syn-desc">A fragment link — jumps to an id elsewhere on the same page.</p></div>
+<div class="syntax-row"><code class="syn-name">&lt;a href="mailto:..."&gt;</code><p class="syn-desc">Opens the visitor’s email client.</p></div>
+<div class="syntax-row"><code class="syn-name">Skip navigation link</code><p class="syn-desc">The first focusable element in body, for keyboard users.</p></div>
+</div>
+<div class="syntax-group">
+  <h2>Forms</h2>
+  
+  <div class="syntax-row"><code class="syn-name">&lt;input type="text/email/tel/number/date"&gt;</code><p class="syn-desc">Common single-line input types.</p></div>
+<div class="syntax-row"><code class="syn-name">&lt;input type="radio"&gt;</code><p class="syn-desc">Pick exactly one from a group — wrap the group in fieldset/legend.</p></div>
+<div class="syntax-row"><code class="syn-name">&lt;input type="checkbox"&gt;</code><p class="syn-desc">Independent on/off — any number can be checked.</p></div>
+<div class="syntax-row"><code class="syn-name">&lt;select&gt; / &lt;optgroup&gt;</code><p class="syn-desc">A dropdown; optgroup labels categories within it.</p></div>
+<div class="syntax-row"><code class="syn-name">&lt;textarea&gt;</code><p class="syn-desc">A multi-line text box.</p></div>
+<div class="syntax-row"><code class="syn-name">&lt;label for="..."&gt;</code><p class="syn-desc">for must match the input’s id exactly — required on every input.</p></div>
+</div>
+
+</main>
+</body>
+</html>

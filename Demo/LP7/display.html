@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>display — LP7 — Selectors, Box Model &amp; External CSS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="crumb"><a href="../index.html">All Learning Plans</a>
+<span class="sep">/</span>
+<a href="index.html">LP7 — Selectors, Box Model &amp; External CSS</a>
+<span class="sep">/</span>
+<span class="current">display</span></div>
+</header>
+<main>
+<div class="topic-hero">
+  <h1>display</h1>
+  <p>display controls how an element participates in page layout — whether it starts a new line, flows in text, or disappears entirely.</p>
+</div>
+
+<h2 class="block-title">Live Demo</h2>
+<div class="demo-box">
+<div style="display:inline-block;background:#3A7CA5;color:#fff;padding:8px 14px;border-radius:6px;">display: inline-block;</div> <span style="color:#5B5F78;">flows right next to it</span>
+</div>
+
+<h2 class="block-title">Code</h2>
+<div class="code-blocks two-col">
+    <div class="code-panel">
+      <div class="code-panel-header">HTML</div>
+      <pre><code>&lt;<span class="tag">div</span> class=<span class="str">"badge"</span>&gt;display: inline-block;&lt;/<span class="tag">div</span>&gt;
+&lt;<span class="tag">span</span>&gt;flows right next to it&lt;/<span class="tag">span</span>&gt;</code></pre>
+    </div>
+    <div class="code-panel">
+      <div class="code-panel-header">style.css</div>
+      <pre><code>.badge {
+  <span class="prop">display</span>: inline-block;
+  <span class="prop">padding</span>: 8px 14px;
+  <span class="prop">background</span>: #3A7CA5;
+  <span class="prop">color</span>: #fff;
+}</code></pre>
+    </div>
+</div>
+
+
+<nav class="topic-footnav">
+  <a href="margin.html">← Previous</a>
+  <a class="to-index" href="index.html">LP7 — Selectors, Box Model &amp; External CSS topics</a>
+  <a href="flexbox-basics.html">Next →</a>
+</nav>
+
+</main>
+</body>
+</html>

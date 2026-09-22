@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Styled Forms — LP8 — Typography, Navigation &amp; Accessibility</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="crumb"><a href="../index.html">All Learning Plans</a>
+<span class="sep">/</span>
+<a href="index.html">LP8 — Typography, Navigation &amp; Accessibility</a>
+<span class="sep">/</span>
+<span class="current">Styled Forms</span></div>
+</header>
+<main>
+<div class="topic-hero">
+  <h1>Styled Forms</h1>
+  <p>Form controls don’t inherit page fonts by default. A form reset applies font-family: inherit and a consistent border to every input, select, and textarea.</p>
+</div>
+
+<h2 class="block-title">Live Demo</h2>
+<div class="demo-box">
+<input type="text" placeholder="Styled input" style="font-family:inherit;padding:8px 10px;border:1px solid #DED9CC;border-radius:6px;">
+</div>
+
+<h2 class="block-title">Code</h2>
+<div class="code-blocks two-col">
+    <div class="code-panel">
+      <div class="code-panel-header">HTML</div>
+      <pre><code>&lt;<span class="tag">input</span> type=<span class="str">"text"</span> placeholder=<span class="str">"Styled input"</span>&gt;</code></pre>
+    </div>
+    <div class="code-panel">
+      <div class="code-panel-header">style.css</div>
+      <pre><code>input, select, textarea {
+  <span class="prop">font-family</span>: inherit;
+  <span class="prop">font-size</span>: 1rem;
+  <span class="prop">padding</span>: 8px 10px;
+  <span class="prop">border</span>: 1px solid #DED9CC;
+  <span class="prop">border-radius</span>: 6px;
+}</code></pre>
+    </div>
+</div>
+
+
+<nav class="topic-footnav">
+  <a href="focus-visible.html">← Previous</a>
+  <a class="to-index" href="index.html">LP8 — Typography, Navigation &amp; Accessibility topics</a>
+  <span></span>
+</nav>
+
+</main>
+</body>
+</html>
